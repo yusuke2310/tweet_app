@@ -1,6 +1,5 @@
 class User < ApplicationRecord
-    def has_secure_password
-    end
+    has_secure_password
     
     validates :name, {presence: true }
     validates :email, {presence: true , uniqueness:true }
